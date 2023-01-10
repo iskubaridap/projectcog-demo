@@ -1,0 +1,386 @@
+<style>
+    .huge-text {
+        font-size: 4em;
+    }
+    .list_of_game li{
+        list-style: none;
+    }
+    .title-img {
+        width: 250px;
+        height: auto;
+    }
+    .list_of_game li{
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    .we-got-game h1{
+        font-size: 60px;
+    }
+    .fa-laptop ,.fa-graduation-cap, .fa-film, .fa-code, .fa-crop, .fa-bar-chart:before{
+        padding-right: 20px;
+    }
+    .title-color-cyan{
+        color: var(--cyan);
+    }
+    .projectcog-service-item {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #lightbulb-cog {
+        width: 250px;
+        height: auto;
+    }
+    .title-img-wrap {
+        margin: 25px auto;
+        background-color: #fff;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 400px;
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+    }
+    #we-got-game-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .we-got-game-txt {
+        width: 300px;
+    }
+    .we-got-game-icon {
+        font-size: 1.5em;
+        color: var(--yellow);
+    }
+    .we-got-game-title {
+        color: var(--orange);
+    }
+    .we-got-game-txt {
+        color: var(--white);
+    }
+    #we-got-game-sm {
+        display: none;
+    }
+    @media (min-width:1200px){
+        /* .app-game-section{
+            display: flex;
+            width: 100%;
+        } */
+        #we-got-game-wrap {
+            padding: 20px 50px;
+            display: block;
+            align-items: unset;
+            justify-content: unset;
+        }
+        #projectcog-service-wrap {
+            display: flex;
+            justify-content: space-around;
+        }
+        .title{
+            font-size: 24pt;
+        }
+        .paragraph{
+            font-size: 12pt;
+        }
+        .text-wrap{
+            width: 21rem;
+        }
+    }
+
+    @media (max-width:1199px){
+        #we-got-game-md {
+            display: none;
+        }
+        #we-got-game-sm {
+            display: block;
+        }
+        #we-got-game-sm img {
+            width: 400px;
+        }
+        #we-got-game-wrap {
+            padding: 20px 50px;
+            display: block;
+            align-items: unset;
+            justify-content: unset;
+        }
+        #projectcog-service-wrap {
+            display: flex;
+            justify-content: space-around;
+        }
+        .title{
+            font-size: 22pt;
+        }
+        .paragraph{
+            font-size: 12pt;
+        }
+        .text-wrap{
+            width: 16rem;
+        }
+    }
+
+    @media (max-width:1024px){
+        #we-got-game-md {
+            display: none;
+        }
+        #we-got-game-sm {
+            display: block;
+        }
+        #we-got-game-sm img {
+            width: 400px;
+        }
+        #we-got-game-wrap {
+            padding: 20px 50px;
+            display: block;
+            align-items: unset;
+            justify-content: unset;
+        }
+        #projectcog-service-wrap {
+            display: flex;
+            justify-content: space-around;
+        }
+        .title{
+            font-size: 22pt;
+        }
+        .paragraph{
+            font-size: 10pt;
+        }
+        .text-wrap{
+            width: 13rem;
+        }
+        .address-area{
+            background-color: var(--cyan);
+        }
+        .title-img-wrap {
+            margin: 25px auto;
+            background-color: #fff;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 400px;
+            box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+        }
+        .title-img {
+            width: 150px;
+        }
+    }
+
+    @media (max-width:991px){
+        #we-got-game-md {
+            display: none;
+        }
+        #we-got-game-sm {
+            display: block;
+        }
+        #we-got-game-sm img {
+            width: 400px;
+        }
+        .huge-text {
+            font-size: 3em;
+        }
+        #we-got-game-wrap {
+            padding: 20px 50px;
+            display: block;
+            align-items: unset;
+            justify-content: unset;
+        }
+        #projectcog-service-wrap {
+            display: block;
+            justify-content: unset;
+        }
+        .col-md-12{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .paragraph{
+            display: inline-flex;
+            width: 600px;
+        }
+        .title{
+            font-size: 32pt;
+        }
+        .paragraph{
+            font-size: 18pt;
+        }
+        .col-lg-1{
+            height: 1px;
+        }
+    }
+
+    @media (max-width:767px){
+        #we-got-game-md {
+            display: none;
+        }
+        #we-got-game-sm {
+            display: block;
+        }
+        #we-got-game-sm img {
+            width: 300px;
+        }
+        .projectcog-service-item {
+            margin-top: 30px;
+        }
+        .title-img-wrap {
+            width: 200px;
+            height: 200px;
+        }
+        .title-img {
+            width: 150px;
+        }
+        .huge-text {
+            font-size: 2.5em;
+        }
+        #we-got-game-wrap {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+        #projectcog-service-wrap {
+            display: block;
+            justify-content: unset;
+        }
+        .col-md-12{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .paragraph{
+            display: inline-flex;
+            width: 400px;
+        }
+        .title{
+            font-size: 32pt;
+        }
+        .paragraph{
+            font-size: 12pt
+        }
+    }
+
+    @media (max-width:536px){
+        #we-got-game-content {
+        display: block;
+        justify-content: unset;
+        align-items: unset;
+        }
+        .we-got-game-txt {
+            width: unset;
+        }
+        .col-sm-12{
+            text-align: center;
+        }
+        .col-lg-1{
+            height: 10px;
+        }
+    }
+    @media (max-width:440px){
+        #company-title {
+            font-size: 4em;
+        }
+    }
+
+</style>
+
+<div class="container-fluid main-content-wrap-padding pb-0">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 main-content"></div>
+        <div class="col-lg-10 col-md-10 main-content text-center pb-5">
+            <p class="huge-text text-orange animate__animated animate__flipInX mx-auto d-block ">Imagination, meet innovation.</p>
+            <img id="lightbulb-cog" class="mt-1 mb-3 animate__animated animate__wobble" src="./assets/imgs/lightbulb-cog.svg">
+            <p class="fs-4 animate__animated animate__flipInX ">You two should get along just fine.</p>
+            <p class="mt-5 mb-0 fs-1 ps-3 pe-3 animate__animated animate__flipInX ">Whatever you need, our answer will always be,</p>
+            <p class="huge-text text-orange animate__animated animate__flipInX ">You betcha!</p>
+        </div>
+    </div>
+    <div class="row bg-cream">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-10 col-md-10 text-center pb-5">
+            <p class="fs-1 mt-4 text-cyan">Check out what Project Cog can do for you...</p>
+            <div id="projectcog-service-wrap">
+                <div class="projectcog-service-item">
+                    <h2 class="text-center fs-4">App &amp; Game Development</h2>
+                    <div class="title-img-wrap">
+                        <img class="mx-auto d-block title-img mb-3" src="./assets/imgs/Features/app_game_isometric.png">
+                    </div>
+                    <a href="#/features?page=app-game-dev" class="btn btn-lg animate__animated animate__slideInRLeft" tabindex="-1" role="button">Learn More</a>
+                </div>
+                <div class="projectcog-service-item">
+                    <h2 class="text-center fs-4">E-Learning Solution</h2>
+                    <div class="title-img-wrap">
+                        <img class="mx-auto d-block title-img mb-3" src="./assets/imgs/Features/e-learning_solution.png">
+                    </div>
+                    <a href="#/features?page=elearning-solution" class="btn btn-lg animate__animated animate__slideInRLeft" tabindex="-1" role="button">Learn More</a>
+                </div>
+                <div class="projectcog-service-item">
+                    <h2 class="text-center fs-4">Widgets &amp; What-Nots</h2>
+                    <div class="title-img-wrap">
+                        <img class="mx-auto d-block title-img mb-3" src="./assets/imgs/Features/widgets.png">
+                    </div>
+                    <a href="#/features?page=widgets-whatnot" class="btn btn-lg animate__animated animate__slideInRLeft" tabindex="-1" role="button">Learn More</a>
+                </div>
+            </div>
+            <p class="fs-2 text-dark-brown">We make things happen <i class="bi bi-hand-thumbs-up-fill"></i></p>
+        </div>
+    </div>
+</div>
+
+<!-- Robot background -->
+
+    <div style="background-color: currentColor;">
+        <div id="we-got-game-wraper" class="container pt-4 pb-5">
+            <div class="row">
+                <div class="col">
+                    <div id="we-got-game-sm">
+                        <img class="mx-auto d-block mt-3 mb-5" src="./assets/imgs/development-g5adcef009_640.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="we-got-game-content">
+                        <div class="we-got-game-item we-got-game-txt">
+                            <div class="text-center">
+                                <i class="we-got-game-icon fa fa-laptop features-icon"></i>
+                                <h3 class="we-got-game-title">Front End Development </h3>
+                                <p class="we-got-game-txt small text-start">Your clients want gorgeous, sleek and intuitive web applications. You&apos;re in luck, we like shiny things.</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="we-got-game-icon fa fa-graduation-cap features-icon"></i>
+                                <h3 class="we-got-game-title">Instructional Design</h3>
+                                <p class="we-got-game-txt small text-start">We make e-Learning fun but effective by individually analyzing and meeting your educational needs.</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="we-got-game-icon fa fa-film features-icon"></i>
+                                <h3 class="we-got-game-title">Animation</h3>
+                                <p class="we-got-game-txt small text-start">One of the best ways to encourage interaction with your app or course is to bring it to life using our animators.</p>
+                            </div>
+                        </div>
+                        <div id="we-got-game-md" class="we-got-game-item">
+                            <img src="./assets/imgs/development-g5adcef009_640.png">
+                        </div>
+                        <div class="we-got-game-item we-got-game-txt">
+                            <div class="text-center">
+                                <i class="we-got-game-icon fa fa-code features-icon"></i>
+                                <h3 class="we-got-game-title">Back End Development</h3>
+                                <p class="we-got-game-txt small text-center">Backend Development: Server-side coding and intelligent database design is our cake and, yes, it&apos;s delicious. Care for a slice?</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="we-got-game-icon fa fa-crop features-icon"></i>
+                                <h3 class="we-got-game-title">Graphic Design</h3>
+                                <p class="we-got-game-txt small text-center">Need logos, custom graphics, or print-ready artwork? Our design team has you covered and lookin&apos; goood.</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="we-got-game-icon fa fa-bar-chart features-icon"></i>
+                                <h3 class="we-got-game-title">Project Management</h3>
+                                <p class="we-got-game-txt small text-center">From planning to completion, your projects are in some seriously solid and experienced hands.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

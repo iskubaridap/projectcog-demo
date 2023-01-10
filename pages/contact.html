@@ -1,0 +1,179 @@
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<style>
+    .title{
+        color: var(--orange);
+        font-size: 4em;
+    }
+    .paragraph{
+        font-size: 2em;
+        color: var(--dark-brown);
+    }
+    #name, #password, #email, #phone{
+        display: none;
+    }
+    @media (max-width:767px){
+        .address-contact-page{
+            text-align: center;
+        }
+    }
+    @media (max-width:440px){
+        #company-title{
+            font-size: 4em;
+        }
+    }
+    @media (max-width:370px){
+        #company-title{
+            font-size: 3em;
+        }
+        #header-address{
+            font-size: 1.3em;
+        }
+        #header-tel{
+            font-size: 3em;
+        }
+        .address-contact-page h1{
+            font-size: 3em;
+        }
+        .address-contact-page p{
+            font-size: 1.5em;
+        }
+    }
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+ 
+ #contact {
+     background:#F9F9F9;
+     padding:25px;
+     margin:50px 0;
+ }
+  
+ #contact h3 {
+     color: var(--cyan);
+     display: block;
+     font-size: 30px;
+     font-weight: 700;
+ }
+  
+ #contact h4 {
+     margin:5px 0 15px;
+     display:block;
+     color: black;
+     font-size: 13px;
+ }
+  
+ fieldset {
+     border: medium none !important;
+     margin: 0 0 10px;
+     min-width: 100%;
+     padding: 0;
+     width: 100%;
+ }
+  
+ #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+     width:100%;
+     border:1px solid #CCC;
+     background:#FFF;
+     margin:0 0 5px;
+     padding:10px;
+ }
+  
+ #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+     -webkit-transition:border-color 0.3s ease-in-out;
+     -moz-transition:border-color 0.3s ease-in-out;
+     transition:border-color 0.3s ease-in-out;
+     border:1px solid #AAA;
+ }
+  
+ #contact textarea {
+     height:100px;
+     max-width:100%;
+   resize:none;
+ }
+  
+ /* #contact button[type="submit"] {
+     cursor:pointer;
+     width: 100%;
+     border:none;
+     background:rgb(3, 153, 212);
+     color:#FFF;
+     margin:0 0 5px;
+     padding:10px;
+     font-size:15px;
+ } */
+  
+ /* #contact button[type="submit"]:hover {
+     background:#09C;
+     -webkit-transition:background 0.3s ease-in-out;
+     -moz-transition:background 0.3s ease-in-out;
+     transition:background-color 0.3s ease-in-out;
+ } */
+  
+ #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+  
+ #contact input:focus, #contact textarea:focus {
+     outline:0;
+     border:1px solid #999;
+ }
+ ::-webkit-input-placeholder {
+  color:#888;
+ }
+ :-moz-placeholder {
+  color:#888;
+ }
+ ::-moz-placeholder {
+  color:#888;
+ }
+ :-ms-input-placeholder {
+  color:#888;
+ }
+    .success{
+    color: var(--orange);
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    }
+    .failed{
+        color: var(--gray-light);
+        font-weight: 700;
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-8 contact-form-area pt-5 pb-5">
+            <h1 >CONTACT US WITH ANY QUESTIONS</h1>
+          
+              <form id="contact" method="post">
+                    <div class="form-row">
+                    <h3>Quick Contact</h3>
+                    <h4>Contact us today, and get reply with in 24 hours!</h4>
+                        <div class="mb-3">
+                            <div id="name-group" class="form-group"><input type="text" name="name" placeholder="Your Name *" ><small class="form-text text-danger flex-grow-1 help-block lead"></small></div><br>
+                            <div id="email-group" class="form-group"><input type="email" name="email" placeholder="Your Email *" ><small class="form-text text-danger help-block lead"></small></div><br>
+                            <div id="phone-group" class="form-group"><input type="tel" name="phone" placeholder="Your Phone *" ><small class="form-text text-danger help-block lead"></small></div><br>
+                            <div id="subjectline-group" class="form-group"><input placeholder="Type your subject line" type="text" name="subjectline" tabindex="4"><small class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="mb-3">
+                            <div id="messagebody-group" class="form-group"><textarea name="messagebody" placeholder="Your Message *" style="height: 146px;"></textarea><small class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                            <div class="mb-3">
+                            <div id="success">
+                        </div>
+                        <!-- <button class="btn text-uppercase" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Send Message</button></div> -->
+                        <button type="submit" class="btn btn-success text-uppercase">Send Message</button></div>
+                        <div>
+                            <!-- <p class="success"> <?php echo $success;  ?></p>
+                            <p class="failed"> <?php echo $failed;  ?></p> -->
+                        </div>
+                    </div>
+                </form>  
+        </div>
+        </div>
+        <!-- <div class="col-lg-5 col-md-6 col-sm-12 soc-med pt-5">
+            <h4 style="color: var(--white);">Follow Us:</4>
+            <?php include 'social_media.php';?>
+        </div> -->
+    </div>
+
+<script src="./assets/js/form.js"></script>

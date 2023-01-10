@@ -1,0 +1,624 @@
+<style>
+    @import './assets/css/demo-portfolio.css';
+    @import './assets/css/responsiveslides.css';
+</style>
+<div class="container-fluid main-content-wrap-padding pb-0">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 main-content"></div>
+        <div class="col-lg-10 col-md-10 main-content">
+            <div id="title-wrap" class="d-flex justify-content-between align-items-end">
+                <div class="title-item">
+                    <h1 class="title title-color text-uppercase" data-target="app-game-dev">App &amp; Game Development</h1>
+                </div>
+                <div class="title-item">
+                    <h1 class="title title-color text-uppercase" data-target="elearning-solution">E-Learning Solution</h1>
+                </div>
+                <div class="title-item">
+                    <h1 class="title title-color text-uppercase" data-target="widgets-whatnot">Widgets &amp; What-Nots</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- app-game-dev -->
+<section class="sec-content mb-5" data-section="app-game-dev">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 main-content"></div>
+            <div class="col-lg-10 col-md-10 main-content">
+                <h2 class="sub-title pt-3 text-uppercase">Introducing CogWorks</h2>
+                <p class="paragraph">Maybe you're looking for something from our own line of in-house developed products. Or maybe you need your own custom app developed. We can take you to the next level and give you the tools you need to succeed and look bodacious while you're at it.</p>
+                <ul id="filters" class="controls clearfix">
+                    <li><span class="control addGameFilter active" data-filter="all">All</span></li>
+                    <li><span class="control addGameFilter" data-filter=".addGameApp">Apps</span></li>
+                    <li><span class="control addGameFilter" data-filter=".addGameGames">Games</span></li>
+                    <li><span class="control addGameFilter" data-filter=".addGameTools">Tools</span></li>			
+                    <li><span class="control addGameFilter" data-filter=".addElearning">E-Learning</span></li>			
+                </ul>
+                <!-- all -->
+                <div id="addGameDev">
+                    <div class="portfolio mix addGameApp" data-cat="addElearning">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/aha.png" alt="" />                    
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">HA CPR Game</a>
+                                    <span class="text-category">Games/elearning</span>                            
+                                </div>
+                                <div id="aha-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>                        
+                            </div>                    
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>        
+                    </div>
+                    <div class="portfolio mix addGameGames" data-cat="addElearning">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/Games/angry-cow-thmb.png" alt="" />                    
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Angry Cow</a>
+                                    <span class="text-category">Games/elearning</span>                            
+                                </div>
+            
+                                <div id="angry-cow-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>                        
+                            </div>                    
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>        
+                    </div>
+            
+                    <div class="portfolio mix addGameTools" data-cat="addGameTools">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/Apps/mcafee-dashboard.png" alt="" />                    
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">ELearning Dashboard</a>
+                                    <span class="text-category">Tools/Apps</span>                            
+                                </div>
+            
+                                <div id="mcafee-dashboard-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>                        
+                            </div>                    
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>        
+                    </div>
+                    <div class="portfolio mix addGameTools" data-cat="addGameTools">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/Tools/CogTranslate.png" alt="" />                    
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Translation Tool</a>
+                                    <span class="text-category">Tools/Apps</span>                            
+                                </div>
+            
+                                <div id="translationTool-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>                        
+                            </div>                    
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>        
+                    </div>	
+
+                    <div class="portfolio mix addGameGames" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/Games/explore.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Various </a>
+                                    <span class="text-category">Games</span>
+                                </div>
+            
+                                <div id="various-games-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>	
+
+                    <div class="portfolio mix addGameApp addElearning" data-cat="addElearning">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/halo.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Halo Quest</a>
+                                    <span class="text-category">APP/eLearning</span>
+                                </div>
+            
+                                <div id="visualInfography-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>		
+            
+                    <div class="portfolio mix addElearning" data-cat="addElearning">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/impResearch.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Measure Evaluation</a>
+                                    <span class="text-category">eLearning</span>
+                                </div>
+            
+                                <div id="measure-evaluation-modal-wrap" class="thumbnailsInfo"></div>  
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+                    
+                    <div class="portfolio mix addGameGames" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/Games/matching.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Memory &amp; Matching</a>
+                                    <span class="text-category">eLearning/Game</span>
+                                </div>
+            
+                                <div id="memory-games-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addElearning" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/drag-drop.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Drag &amp; Drop</a>
+                                    <span class="text-category">E-Learning</span>
+                                </div>
+            
+                                <div id="drop-drag-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+                    
+                    <div class="portfolio mix addElearning" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/conversational_elearning.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Conversational Training</a>
+                                    <span class="text-category">E-Learning</span>
+                                </div>
+            
+                                <div id="conversational-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+                    
+                    <div class="portfolio mix addElearning" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/flash_cards-E-learning.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Flash Cards</a>
+                                    <span class="text-category">E-Learning</span>
+                                </div>
+            
+                                <div id="flash-cards-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addElearning" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/scenario-activities-e-learning.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Scenario Activities</a>
+                                    <span class="text-category">E-Learning</span>
+                                </div>
+            
+                                <div id="scenario-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addElearning addGameApp" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/on-demand-training-and-activities.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">On-Demand Training &amp; Activities</a>
+                                    <span class="text-category">E-Learning/Apps</span>
+                                </div>
+            
+                                <div id="on-demand-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addGameTools" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/leaderboardtools.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Leaderboard</a>
+                                    <span class="text-category">Tools</span>
+                                </div>
+            
+                                <div id="leaderboard-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addGameTools" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/translator-tools.png" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Translator</a>
+                                    <span class="text-category">Tools</span>
+                                </div>
+            
+                                <div id="translator-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addElearning" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/halo-quest.jpg" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Halo Quest</a>
+                                    <span class="text-category">E-learning</span>
+                                </div>
+            
+                                <div id="halo-quest-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    <div class="portfolio mix addGameGames" data-cat="addGameGame">
+                        <div class="portfolio-wrapper dksort">
+                            <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/space-invaders.jpg" alt="" />
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title">Space Invaders</a>
+                                    <span class="text-category">Games</span>
+                                </div>
+            
+                                <div id="space-invaders-modal-wrap" class="thumbnailsInfo"></div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                        <div class="thumbnailsInfoViewer"></div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- elearning-solution -->
+<section class="sec-content mb-5" data-section="elearning-solution">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 main-content"></div>
+            <div class="col-lg-10 col-md-10 main-content">
+                <h2 class="sub-title pt-3 text-uppercase">e-Learning/Serious Games</h2>
+                <p class="paragraph">Serious (and sometimes not-so-serious) games, immersive interactions, engaging scenarios and more. When it comes to eLearning we&apos;ll bring you a truly awesome experience that will entertain and educate the pants off your audience.</p>
+                
+                <div><img id="logo-cogworks" class="mx-auto d-block" src="./assets/imgs/logo.svg"></div>
+                <p class="fs-4 text-center mx-auto d-block" style="max-width: 800px">A powerful online app for creating <b>responsive E Learning</b> and <b>responsive websites</b> using the <b>Bootstrap framework</b>.</p>
+                <div><img id="cogworks-interface" class="mx-auto d-block" src="./assets/imgs/e-learning solution/interface3.jpg"></div>
+                <p class="fs-3 text-center mt-5 mb-3 mx-auto d-block" style="max-width: 600px"><b>Cog Works</b> is a online application filled with powerful features.</p>
+                <p class="text-center mb-5 mx-auto d-block" style="max-width: 950px">Cog Works helps code developers, instructional developer, and designers of all skill levels create the eLearning, website, or app they want by providing flexible and editable tools. It supports a wide range of widgets (components) and Pods (pre-built sections) as well as advanced features that make you more productive. Developers and designers all around the world use it every day. We are sure you&apos;ll love it too!</p>
+            
+                <h3 class="tc-orange fs-3 text-center text-uppercase">Highlights</h3>
+            
+                <div class="container mt-5">
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/1_beautiful_interface.jpg" alt="" class="interface-min-width">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <h4 class="tc-orange">Simple and Intuitive Interface</h4>
+                            <p>Cog Works has an intuitive drag and drop interface, which is designed to make you more productive. It makes it really easy to build eLearning, websites, or apps in seconds without writing a single line of code.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mt-5 text-end">
+                            <h4 class="tc-orange">Built for Bootstrap</h4>
+                            <p>Cog Works knows how to construct a valid Bootstrap page. We make site creation easy by providing you with vast customization options. Our tool can provide suggestions for code and components, and automatically write the needed HTML so that you get a beautiful and responsive layout. Without having to knowing a single line of code.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/2_bootstrap_integration.jpg" alt="" class="interface-min-width">
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/3_real_time_preview.jpg" alt="" class="interface-min-width">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <h4 class="tc-orange">Real Time Preview</h4>
+                            <p>Cog Works has a powerful feature called Preview. With it you can open your design in multiple web browsers and devices, and every change you make within the app will be viewable instantly.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mt-5 text-end">
+                            <h4 class="tc-orange">Rich Library of Widgets and Pods</h4>
+                            <p>Everything from Bootstrap is supported, and you can even use basic elements like <b>div</b>, <b>span</b> and <b>section</b> to create any kind of design imaginable. Cog Works also has a large collection of Widgets and Pods shared by other users found on our online library.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/4_component_library.jpg" alt="" class="interface-min-width">
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/5_smart_components.jpg" alt="" class="interface-min-width">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <h4 class="tc-orange">Smart Reusable Widgets and Pods</h4>
+                            <p>You can turn frequently used pieces of your designs like headers, footers and navigation menus into user Widgets and Pods. They become available in your What-nots library and can be dropped into any design.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mt-5 text-end">
+                            <h4 class="tc-orange">Advanced CSS Editor</h4>
+                            <p>Sometimes you need to get your hands dirty and write CSS. Our advanced CSS editing interface supports auto suggest and rule validation, and shows the active and inherited rules at an any given time. You will soon dread having to go back to your text editor.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/6_css_editing.jpg" alt="" class="interface-min-width">
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/e-learning solution/7_js_editing.png" alt="" class="interface-min-width">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <h4 class="tc-orange">Live JavaScript Editing</h4>
+                            <p>Write JavaScript in our Sublime Text-like editor. All your changes are synced with the preview, so you can write code and try it out without having to reload your browser.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="fs-3 text-center mb-5 mx-auto d-block" style="max-width: 600px; margin-top: 100px"><b>Cog Works</b> produces beautiful HTML and CSS, indistinguishable from hand-written code.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-end">
+                            <p class="fs-4">Even more...</p>
+                        </div>
+                        <div class="col-md-7">
+                            <ul>
+                                <li>Write JS and HTML in our Sublime Text-like editor.</li>
+                                <li>Import CSS, JS and HTML files, and fonts from Google Fonts.</li>
+                                <li>Works with Bootstrap 3. Will support Bootstrap 4 once it's released.</li>
+                                <li>Powerful keyboard shortcuts which take your productivity to the next level.</li>
+                                <li>Specialized tools for working with the Bootstrap grid. Easily create, resize and offset columns, and apply responsive visibility classes.</li>
+                                <li>Has multiple built-in Bootstrap themes. You can also import your own.</li>
+                                <li>Has multiple built-in Bootstrap themes. You can also import your own.</li>
+                                <li>It is online so no need to worry about updates, so you always have the latest version and it works on all systems!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- widgets-whatnot -->
+<section id="hotspotter" class="sec-content mb-5" data-section="widgets-whatnot">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 main-content"></div>
+            <div class="col-lg-10 col-md-10 main-content">
+                <h2 class="sub-title pt-3 text-uppercase">Tool &amp; Plugin Development</h2>
+                <p class="paragraph">Need a little something to make your life easier? We&apos;ve got a wide variety of time-saving tools at your disposal - just make a selection. Don&apos;t see what you need? Let us know! We&apos;ll develop something to make the competition jealous.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="container">
+            <div id="headline">
+                <h2>Hotspotter</h2>
+                <h3>
+                    The most advanced<br>jQuery plugin for creating image maps.
+                </h3>
+                <div id="find-out-more" data-inner-link-target="features">Find Out More</div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <article class="bg-lightblue" id="article-features-light" data-inner-link="features">
+            <div class="container">
+                <ol class="row">
+                    <div class="col-md-6">
+                        <li><a data-inner-link-target="editor"><span class="features-badge" id="features-badge-1">1</span> Advanced Drag-and-drop Editor</a></li>
+                        <li><a data-inner-link-target="shapes"><span class="features-badge" id="features-badge-2">2</span> Polygon, Icon, Rectangle and Ellipse Shapes</a></li>
+                        <li><a data-inner-link-target="icons"><span class="features-badge" id="features-badge-3">3</span> 150 SVG Icons Included</a></li>
+                        <li><a data-inner-link-target="style"><span class="features-badge" id="features-badge-4">4</span> Tons of Style and Animation Options</a></li>
+                    </div>
+                    <div class="col-md-6">
+                        <li><a data-inner-link-target="responsive"><span class="features-badge" id="features-badge-5">5</span> Responsive and Optimized for Touchscreen</a></li>
+                        <li><a data-inner-link-target="actions"><span class="features-badge" id="features-badge-6">6</span> Customizable Mouseover and Click Actions</a></li>
+                        <li><a data-inner-link-target="api"><span class="features-badge" id="features-badge-7">7</span> Comprehensive API</a></li>
+                        <li><a data-inner-link-target="support"><span class="features-badge" id="features-badge-8">8</span> Comprehensive Customer Support for all tools</a></li>
+                    </div>
+                </ol>
+            </div>
+        </article>
+        <article id="article-drag-and-drop-editor" data-inner-link="editor">
+            <div class="container-fluid">
+                <div class="line-yellow-vertical article-line" id="article-1-line"></div>
+                <div class="article-badge" id="article-1-badge">1</div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h3>Super Advanced<br><span>Drag-and-drop Editor</span></h3>
+                        <p>Cog Work's Hot Spot Pod has all the features you need to quickly create, edit and export your image maps. Using the app is super easy and a step-by-step guide is included.</p>
+                        <!--<div class="btn btn-blue btn-lg" id="button-try-editor"><a href="http://webcraftplugins.com/uploads/image-map-pro/editor-jquery/" target="_blank">Try the Editor</a></div>-->
+                    </div>
+                    <div class="col-sm-12 col-md-8 article-aside-image presented" id="screenshot-editor-wrap">
+                        <img src="./assets/imgs/image-map-pro-jquery/editor-screenshot.png" class="zoomable-image" id="screenshot-editor">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="squares-article" class="bg-lightblue centered-content">
+            <div class="container">
+                <div class="col-md-4 col-sm-6 article-aside-image">
+                    <div id="squares-screenshot-1-wrap">
+                        <img src="./assets/imgs/image-map-pro-jquery/squares-screenshot-1.png" id="squares-screenshot-1">
+                        <div id="squares-screenshot-1-shadow"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h3><span>Pods Builder</span></h3>
+                    <p>We are introducing Pod Builder - a content builder that lets you add rich content and media to the tooltips of your image map.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 article-aside-image">
+                    <div id="squares-screenshot-2-wrap">
+                        <img src="./assets/imgs/image-map-pro-jquery/squares-screenshot-2.png" id="squares-screenshot-2">
+                        <img src="./assets/imgs/image-map-pro-jquery/squares-screenshot-2-shadow.png" id="squares-screenshot-2-shadow">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="article-custom-shapes"  data-inner-link="shapes">
+            <div class="container">
+                <div class="line-yellow-vertical article-line" id="article-2-line"></div>
+                <div class="article-badge" id="article-2-badge">2</div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Draw Your Own<br><span>Custom Shapes</span></h3>
+                        <p>Cog Work's Hot Spot Pod allows you to draw custom shapes. You can also customize pins, icons, rectangles, and ellipses.</p>
+                        <img src="./assets/imgs/image-map-pro-jquery/shapes_new.png" id="image-shapes">
+                    </div>
+                    <div class="col-sm-8 article-aside-image">
+                        <video autoplay loop id="video-drawing-shapes">
+                            <img src="./assets/imgs/image-map-pro-jquery/demo-drawing-shapes-placeholder.jpg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="article-svg-icons" class="bg-lightblue" data-inner-link="icons">
+            <div class="container">
+                <div class="line-yellow-vertical article-line" id="article-3-line"></div>
+                <div class="article-badge" id="article-3-badge">3</div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h3><span>SVG Icons</span></h3>
+                        <p>That&apos;s right, 150 high-quality SVG icons bundled in the Editor. And if you still can’t find that special icon you need, you can also use your own image.</p>
+                    </div>
+                    <div class="col-sm-7 article-aside-image">
+                        <img src="./assets/imgs/image-map-pro-jquery/icons.png" id="image-icons">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="article-styles-and-animations" class="bg-white" data-inner-link="style">
+            <div class="container">
+                <div class="line-yellow-vertical article-line" id="article-4-line"></div>
+                <div class="article-badge" id="article-4-badge">4</div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h3>Full Control Over<br><span>Styles and Animations</span></h3>
+                        <p>With the Editor you can customize properties like opacity, fill, stroke and corner-radius to match the design of your course or project. You can also have separate styles on mouseover!</p>
+                    </div>
+                    <div class="col-sm-7 article-aside-image">
+                        <img src="./assets/imgs/image-map-pro-jquery/shapes_demo.gif" id="image-shapes-2">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="bg-lightblue" id="article-responsive" data-inner-link="responsive">
+            <div class="container">
+                <div class="line-yellow-vertical article-line" id="article-5-line"></div>
+                <div class="article-badge" id="article-5-badge">5</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Touchscreen Optimized and<br><span>Fully Responsive</span></h3>
+                        <p>Cog Work's Hot Spot Pod is made to properly handle touch events. And if you have a lot of content in your tooltips you can make them fullscreen on mobile devices.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="iphone-wrap">
+                            <div id="iphone-inner-wrap">
+                                <img src="./assets/imgs/image-map-pro-jquery/iphone.png" id="iphone">
+                                <div id="black-filler-line"></div>
+                                <video autoplay loop id="mobile-gif">
+                                    <img src="./assets/imgs/image-map-pro-jquery/demo-mobile.jpg">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="container inline-article-wrap">
+            <div class="row">
+                <article class="col-sm-4 col-xs-12 inline-article" data-inner-link="actions">
+                    <div class="line-yellow-vertical article-line" id="article-6-line"></div>
+                    <div class="line-yellow-horizontal" id="article-6-line-horizontal"></div>
+                    <div class="article-badge" id="article-6-badge">6</div>
+                    <h3>Customizable Actions for<br><span>Mouseover and Click</span></h3>
+                    <p>Shapes can be links. Tooltips can be made to appear on mouseover or click - whatever works best in your case. You can also turn the tooltips off completely!</p>
+                </article>
+                <article class="col-sm-4 col-xs-12 inline-article" data-inner-link="api">
+                    <div class="article-badge" id="article-7-badge">7</div>
+                    <h3>Comprehensive<br><span>API Included</span></h3>
+                    <p>Cog Work's Hot Spot Pod comes with an API that you can use to code custom functionality for your image map. For example, you can show a tooltip by default, or run javascript when a user clicks on a shape.</p>
+                </article>
+                <article class="col-sm-4 col-xs-12 inline-article" data-inner-link="support">
+                    <div class="article-badge" id="article-8-badge">8</div>
+                    <h3>Comprehensive<br><span>Customer Support</span></h3>
+                    <p>We are here to help!<br>Our support staff are ready and able to assist with any trouble (technical or otherwise) that you might run into while using Cog Works, or one of our features. We are as far as a phone call or email.</p>
+                    <!--<div class="btn btn-blue" id="button-submit-ticket"><a href="http://webcraftplugins.com/support">Submit Ticket</a></div>-->
+                </article>
+            </div>
+        </div>
+       
+       
+    </section>
+
+</section>
+
+<section id="thumbnailsInfoWrapper">
+    <div class="aTable">
+        <div class="aTR">
+            <div class="aTD">
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div id="thumbnailsInfoViewer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./assets/js/mixitup.min.js"></script>
+<script src="./assets/js/responsiveslides.js"></script>
+<script src="./assets/js/demo-portfolio.js"></script>
+<script src="./assets/js/magic-scroll.js"></script>
+<script src="./assets/js/plugins/image-map-pro.js"></script>
+<script src="./assets/js/page-product.js"></script>
+<script src="./assets/js/page-image-map-pro-jquery.js"></script>
